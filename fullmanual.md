@@ -110,7 +110,7 @@ The file for the observed SFS should have three rows. The first states how many 
 
 The user should provide the name of the file, omitting the .obs extension. The file should be in the working directory.
 
-For an example of how to construct the observed SFS from pyrad ouptut files, see Example 2.
+For an example of how to construct the observed SFS from pyrad ouptut files, see Example 2 (coming soon).
 
 The observed SFS for this tutorial is named tutorial\_observed\_MSFS.obs, and it is available in the data folder of this repository.
 
@@ -130,7 +130,7 @@ How delimitR build models
 
 In order to build a set of models, delimitR requires several things from the user, including a guide tree, and priors on divergence times, population sizes, and migration rates.
 
-Once the prior is built under one guide tree and set of priors, the user can change these settings, and create another set of models. As long as models include the same number of putative species and the same assignment of individuals to species, the two model sets can be included in the same analysis downstream. For an example that uses two sets of priors, see Example 3.
+Once the prior is built under one guide tree and set of priors, the user can change these settings, and create another set of models. As long as models include the same number of putative species and the same assignment of individuals to species, the two model sets can be included in the same analysis downstream. For an example that uses two sets of priors, see Example 3 (coming soon).
 
 Here, we use an example with three populations to set up the analysis.
 
@@ -269,7 +269,7 @@ The user must specify how many bins will be used to summarize the SFS. This numb
 
 Now, we are ready to create the prior using the function makeprior(). The user must provide the prefix used to name the model files, the number of species, the number of classes to be included in the SFS, a path to the working directory, the name of the traits file, the threshold, the name of the folder to store the prior in, and the number of cores to use.
 
-The threshold is used when the observed mSFS is built using a downsampling approach. For example, in the Example 2, we use a threshold of 50%. This means that only SNPs that are sequenced in at least 50% of alleles in each population are used to build the mSFS. SNPs that are sequenced in more than 50% of the individuals are randomly downsampled. The threshold provided here should be the same as the threshold used to perform the downsampling when the mSFS was constructed. If no downsampling was used, the threshold should be set to 100.
+The threshold is used when the observed mSFS is built using a downsampling approach. For example, in the Example 2 (coming soon), we use a threshold of 50%. This means that only SNPs that are sequenced in at least 50% of alleles in each population are used to build the mSFS. SNPs that are sequenced in more than 50% of the individuals are randomly downsampled. The threshold provided here should be the same as the threshold used to perform the downsampling when the mSFS was constructed. If no downsampling was used, the threshold should be set to 100.
 
 The user must provide a folder where the prior will be stored. This folder should not exist prior to running this code, or should be empty.
 
