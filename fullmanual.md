@@ -213,12 +213,12 @@ Order is important when specifying divergence time priors. Consider the tree to 
 
 Divergence time priors should be provided in order of coalescent interval. First, provide the priors for all divergence events in the first coalescent interval, moving across the tree from left to right. In the figure above, the first prior would be for divergence between species 0 and 1, and this is the only divergence event in the first coalescent interval (interval A in the figure). Then, provide the priors for the second coalescent interval. In our figure, the next divergence time prior would be for divergence between the ancestor of species 0 and 1 and species 2 (coalescent interval B).
 
-By default, delimitR requires that divergence time priors in different coalescent intervals be non-overlapping. This prevents divergence times from ocurring in an order that changes the species tree. If the user desires overlapping confidence intervals, a list of rules specifying the order of divergence times must be provided. For example, if the user wanted overlapping divergence time confidence intervals for the example, they would need to provide the following, where divergence events are labelled Tdiv1$ to Tdivx$ in the order detailed above, where x is the number of divergence events:
+By default, delimitR requires that divergence time priors in different coalescent intervals be non-overlapping. This prevents divergence times from ocurring in an order that changes the species tree. If the user desires overlapping priors, a list of rules specifying the order of divergence times must be provided. For example, if the user wanted overlapping divergence time priors for the example, they would need to provide the following, where divergence events are labelled Tdiv1$ to Tdivx$ in the order detailed above, where x is the number of divergence events:
 
     obsdivtimeprior <- list(c(5000,100000),c(50000,1000000))
     myrules <- c('Tdiv2$>Tdiv1$')
 
-For the purpose of the tutorial, we will use non-overlapping intervals.
+For the purpose of the tutorial, we will use non-overlapping priors.
 
     obsdivtimeprior <- list(c(50000,100000),c(500000,1000000))
 
