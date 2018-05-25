@@ -141,7 +141,7 @@ The Guide Tree
 
 The user must input a guide tree as newick-formatted string. For example, suppose the guide tree is:
 
-<img src="/Users/peglegmeg/Desktop/delimitR/vignettes/myspeciestree.png" width="100 px" />
+<img src="/figures/myspeciestree.png" width="100 px" />
 
 We specify it as follows:
 
