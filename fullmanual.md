@@ -178,11 +178,11 @@ The user must also provide a prefix. This will be used to name the fsc2 input fi
 
 Finally, the user must specify the maximum coalescent interval for which to consider migration. This allows users to narrow their set of models, which becomes essential when more than three potential species are considered. In our three-population example, there are two coalescent intervals. If the user specifies a maximum coalescent interval of 1, then we will test all scenarios that involve secondary contact between population 0 and population 1, leading to four models:
 
-<img src="/Users/peglegmeg/Desktop/delimitR/vignettes/models_max1.png" width="500 px" />
+<img src="/figures/models_max1.png" width="500 px" />
 
 If we specified the maximum coalescent interval to be 2, then we would test models that included gene flow between populations 0 and 1, and between the ancestor of populations 0 and 1 and population 2, leading to a total of seven models:
 
-<img src="/Users/peglegmeg/Desktop/delimitR/vignettes/models_max2.png" width="500 px" />
+<img src="/figures/models_max2.png" width="500 px" />
 
 For the purposes of this tutorial, we will specify a maximum coalescent interval of 1.
 
@@ -190,7 +190,7 @@ For the purposes of this tutorial, we will specify a maximum coalescent interval
 
 These are the models that we have defined:
 
-<img src="/Users/peglegmeg/Desktop/delimitR_manual/figures/Models_Ex1.png" width="400 px" />
+<img src="/figures/Models_Ex1.png" width="400 px" />
 
 Setting up the priors
 ---------------------
@@ -209,7 +209,7 @@ The user must also supply priors for divergence times. Divergence times are give
 
 Order is important when specifying divergence time priors. Consider the tree to be divided into coalescent intervals. For example, the tree below has two intervals (A and B).
 
-<img src="/Users/peglegmeg/Desktop/delimitR/vignettes/coalescentintervals.png" width="300 px" />
+<img src="/figures/coalescentintervals.png" width="300 px" />
 
 Divergence time priors should be provided in order of coalescent interval. First, provide the priors for all divergence events in the first coalescent interval, moving across the tree from left to right. In the figure above, the first prior would be for divergence between species 0 and 1, and this is the only divergence event in the first coalescent interval (interval A in the figure). Then, provide the priors for the second coalescent interval. In our figure, the next divergence time prior would be for divergence between the ancestor of species 0 and 1 and species 2 (coalescent interval B).
 
