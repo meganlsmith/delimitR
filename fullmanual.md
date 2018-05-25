@@ -37,7 +37,7 @@ Megan L. Smith
 Overview
 ========
 
-delimitR is an R-packge for jointly inferring species boundaries and the mode of speciation. delimitR takes as input a multidimensional SFS and compares a model set determined by user specifications to infer under what mode speciation occurred in the focal taxa. delimitR can csompare models that include divergence, gene flow, and population size changes.
+delimitR is an R-packge for jointly inferring species boundaries and the mode of speciation. delimitR takes as input a multidimensional SFS and compares a model set determined by user specifications to infer under what mode speciation occurred in the focal taxa. delimitR can compare models that include divergence, gene flow, and population size changes.
 
 Installing delimitR
 ===================
