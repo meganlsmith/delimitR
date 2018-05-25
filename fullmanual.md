@@ -112,9 +112,9 @@ The user should provide the name of the file, omitting the .obs extension. The f
 
 For an example of how to construct the observed SFS from pyrad ouptut files, see Example 2 (coming soon).
 
-The observed SFS for this tutorial is named tutorial\_observed\_MSFS.obs, and it is available in the data folder of this repository.
+The observed SFS for this tutorial is named pseudoobserved\_tutorial\_MSFS.obs, and it is available in the data folder of this repository.
 
-    observedSFS <- 'tutorial_observed_MSFS'
+    observedSFS <- 'pseudoobserved_tutorial_MSFS'
 
 The Traits File
 ---------------
@@ -252,7 +252,7 @@ Now that we have our models set up, we are ready to simulate data, bin the SFS, 
 Simulating data
 ---------------
 
-Now, we are ready to simulate data under each of our models. For this, we use the fastsimcoalsims() function. This function requires as input the prefix used to generate teh model files, the path to fastsimcoal2, and the number of replicates we wish to generate under each model. Generally, a minimum of 10,000 replicates under each model should be simulated.
+Now, we are ready to simulate data under each of our models. For this, we use the fastsimcoalsims() function. This function requires as input the prefix used to generate the model files, the path to fastsimcoal2, and the number of replicates we wish to generate under each model. Generally, a minimum of 10,000 replicates under each model should be simulated.
 
     fastsimcoalsims(prefix=obsprefix,
                     pathtofsc='../fsc26',
