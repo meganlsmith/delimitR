@@ -158,7 +158,7 @@ The user must specify the MAXIMUM number of species that will be tested. This sh
 
     obsspecies<- 3
 
-The user must also provide a vector of sample sizes. Again, this must be compatible with the traits file and the observed SFS. The sample sizes should be specified in order from population 0 to population n-1.
+The user must also provide a vector of sample sizes. Again, this must be compatible with the traits file and the observed SFS. The sample sizes should be specified in order from population 0 to population n-1. These should be the numbers AFTER downsampling. I realize that this is counterintuitive, and will fix it ASAP, but for now, just use the downsampled numbers.
 
     obssamplesize <- c(10,10,10)
 
