@@ -119,7 +119,7 @@ The observed SFS for this tutorial is named pseudoobserved\_tutorial\_MSFS.obs, 
 The Traits File
 ---------------
 
-The next input file is a traits file. This is a tab-delimited file with two-columns. The first line should be a header, and the headings should be 'traits' and 'species'. These species should be named using the integers 0 to n-1, where n is the number of putative species, and arranged in increasing order (0 to n-1). Numbering and ordering is important to ensure that the SFS constructed by fastsimcoal2 for the simulated data matches the one constructed for your observed data. The traits column should have individual names (so this file is mapping individuals to species. The traits file should be in the working directory, and the user should provide the filename.
+The next input file is a traits file. This is a tab-delimited file with two-columns. The first line should be a header, and the headings should be 'traits' and 'species'. These species should be named using the integers 0 to n-1, where n is the number of putative species, and arranged in increasing order (0 to n-1). Numbering and ordering is important to ensure that the SFS constructed by fastsimcoal2 for the simulated data matches the one constructed for your observed data. The traits column should have individual names (so this file is mapping individuals to species). The traits file should be in the working directory, and the user should provide the filename.
 
 The traits file for this tutorial is named tutorial\_traits.txt, and it is available in the data folder of this repository.
 
