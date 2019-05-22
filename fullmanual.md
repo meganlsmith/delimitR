@@ -218,6 +218,8 @@ By default, delimitR requires that divergence time priors in different coalescen
     obsdivtimeprior <- list(c(5000,100000),c(50000,1000000))
     myrules <- c('Tdiv2$>Tdiv1$')
 
+Note that rules must be provided exactly as they need to be input into fsc26. This means that, if you have three divergence times for which you wish to specify an order, you must do this on eat a time: myrules <- c('Tdiv3$>Tdiv2$','Tdiv2$>Tdiv1$').
+
 For the purpose of the tutorial, we will use non-overlapping priors.
 
     obsdivtimeprior <- list(c(50000,100000),c(500000,1000000))
