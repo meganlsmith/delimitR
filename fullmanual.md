@@ -365,7 +365,7 @@ We need to get the observed data into the correct format. For this, we need the 
 Applying the RF classifier to the observed data.
 ------------------------------------------------
 
-Now, we're ready to apply the RF classifier to the observed data. To do this, we use the function RF\_predict\_abcrf(), which requires the RF object, the observed dataset, the Reduced Prior, the Full Prior, and the number of trees, which should match that used to construct the classifier.
+Now, we're ready to apply the RF classifier to the observed data. To do this, we use the function RF\_predict\_abcrf(), which requires the RF object, the observed dataset, the Reduced Prior, the Full Prior, and the number of trees, which should match that used to construct the classifier. Note that there is currently a bug causing the interpretation of this table to be confusing. The models are ordered in the same way as in the confusion matrix (strict alphanumerical), though they are labelled 1 through n. A patch will be released soon with this issue fixed (05/27/2019, estimated update 05/31/2019).
 
     prediction <- RF_predict_abcrf(myRF, myobserved, ReducedPrior, FullPrior, 500)
     prediction
