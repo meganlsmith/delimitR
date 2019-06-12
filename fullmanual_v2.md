@@ -39,6 +39,12 @@ Overview
 
 delimitR is an R-packge for jointly inferring species boundaries and the mode of speciation. delimitR takes as input a multidimensional SFS and compares a model set determined by user specifications to infer under what mode speciation occurred in the focal taxa. delimitR can compare models that include divergence, gene flow, and population size changes.
 
+delimitR is currently described in a preprint on bioRxiv: https://www.biorxiv.org/content/biorxiv/early/2018/06/27/356345.full.pdf. When using delimitR, please cite: 
+
+Smith, Megan L. and Bryan C. Carstens. "Disentangling the process of speciation using machine learning." bioRxiv (2018): 356345.
+
+This manual is for version two of delimitR: delimitR_2.0.0.tar.gz in the github directory.
+
 Installing delimitR
 ===================
 
@@ -125,6 +131,8 @@ The traits file for this tutorial is named tutorial\_traits.txt, and it is avail
 
     traitsfile <- 'tutorial_traits.txt'
 
+If you conducted downsampling using scripts provided in the BuildmSFS directory (or another method), the traits file provided will be pre-downsampling and consist of the original individuals used to construct the SFS.
+
 How delimitR build models
 =========================
 
@@ -162,7 +170,7 @@ The user must provide a matrix of size n x n, where n is the maximum number of s
                         FALSE, FALSE, FALSE),
                         nrow = 3, ncol = 3, byrow = TRUE)
 
-Our model set will only consider migraiton between population 0 and population 1 (and vice-versa) and population 0 and population 2. Note that delimitR is only set up to deal with symmetric migration, so matrices should be symmetrical (i.e. if there is migration between population 0 and population 1 (cell[0,1]), then there must be migration between population 1 and population 0 (cell[1,0]).
+Our model set will only consider migraiton between population 0 and population 1 (and vice-versa). Note that delimitR is only set up to deal with symmetric migration, so matrices should be symmetrical (i.e. if there is migration between population 0 and population 1 (cell[0,1]), then there must be migration between population 1 and population 0 (cell[1,0]).
 
 #### Secondary Contact and Divergence with Gene Flow
 
@@ -191,7 +199,7 @@ The user must specify the MAXIMUM number of species that will be tested. This sh
 
     obsspecies<- 3
 
-The user must also provide a vector of sample sizes. Again, this must be compatible with the traits file and the observed SFS. The sample sizes should be specified in order from population 0 to population n-1. These should be the numbers AFTER downsampling. I realize that this is counterintuitive, and will fix it ASAP, but for now, just use the downsampled numbers.
+The user must also provide a vector of sample sizes. Again, this must be compatible with the traits file and the observed SFS. The sample sizes should be specified in order from population 0 to population n-1. These should be the numbers AFTER downsampling.
 
     obssamplesize <- c(10,10,10)
 
@@ -262,8 +270,8 @@ Now, we are ready to generate the .tpl and .est files that describe these models
                divtimeprior=obsdivtimeprior,
                migrateprior=obsmigrateprior,
                secondarycontact= seccontact,
-               divwgeneflow= divwgeneflow
-               )
+               divwgeneflow= divwgeneflow,
+               maxmigrations = maxedges)
 
 Building a Prior
 ================
@@ -384,7 +392,7 @@ We need to get the observed data into the correct format. For this, we need the 
 Applying the RF classifier to the observed data.
 ------------------------------------------------
 
-Now, we're ready to apply the RF classifier to the observed data. To do this, we use the function RF\_predict\_abcrf(), which requires the RF object, the observed dataset, the Reduced Prior, the Full Prior, and the number of trees, which should match that used to construct the classifier. Note that there is currently a bug causing the interpretation of this table to be confusing. The models are ordered in the same way as in the confusion matrix (strict alphanumerical), though they are labelled 1 through n. A patch will be released soon with this issue fixed (05/27/2019, estimated update 05/31/2019).
+Now, we're ready to apply the RF classifier to the observed data. To do this, we use the function RF\_predict\_abcrf(), which requires the RF object, the observed dataset, the Reduced Prior, the Full Prior, and the number of trees, which should match that used to construct the classifier.
 
     prediction <- RF_predict_abcrf(myRF, myobserved, ReducedPrior, FullPrior, 500)
     prediction
