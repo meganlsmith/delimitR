@@ -1,0 +1,2 @@
+Version 2.0.1 (Feb 18, 2020)
+-fix bugs associated with using multiple guide trees.
