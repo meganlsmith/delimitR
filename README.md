@@ -7,6 +7,7 @@ Note that version 1 is out-of-date and will not be maintained after June 12, 201
 
 If you have any questions, please email megansmth67@gmail.com.
 
-If you're interested in delimitR, see the full manual (version 2), and the preprint: https://www.biorxiv.org/content/biorxiv/early/2018/06/27/356345.full.pdf
+If you're interested in delimitR, see the full manual (version 2), and the paper:
+https://onlinelibrary.wiley.com/doi/full/10.1111/evo.13878
 
 
