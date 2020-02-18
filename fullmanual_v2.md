@@ -39,13 +39,13 @@ Overview
 
 delimitR is an R-packge for jointly inferring species boundaries and the mode of speciation. delimitR takes as input a multidimensional SFS and compares a model set determined by user specifications to infer under what mode speciation occurred in the focal taxa. delimitR can compare models that include divergence, gene flow, and population size changes.
 
-delimitR is currently described in a preprint on bioRxiv: https://www.biorxiv.org/content/biorxiv/early/2018/06/27/356345.full.pdf. 
+delimitR is described in an Evolution paper: https://onlinelibrary.wiley.com/doi/full/10.1111/evo.13878. 
 
 When using delimitR, please cite: 
 
-Smith, Megan L. and Bryan C. Carstens. "Disentangling the process of speciation using machine learning." bioRxiv (2018): 356345.
+Smith, Megan L., and Bryan C. Carstens. "Process‐based species delimitation leads to identification of more biologically relevant species." Evolution 74.2 (2020): 216-229.
 
-This manual is for version two of delimitR: delimitR_2.0.0.tar.gz in the github directory.
+This manual is for version two of delimitR: delimitR_2.0.1.tar.gz in the github directory.
 
 Installing delimitR
 ===================
