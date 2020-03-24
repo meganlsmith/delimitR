@@ -108,7 +108,7 @@ delimitR requires two types of input files: a traits file and an observed SFS.
 The Observed SFS
 ----------------
 
-Observed data must be in the format of a multi-dimensional site frequency spectrum (SFS) as implemented in fastsimcoal2 (fsc2; Excoffier, 2013). More information on this format can be found in the fsc2 documentation. An important consideration is population order. Since we need to ensure that our observed SFS is built in the same way as our simulated SFS, we must ensure that population order is consistent between our observed SFS and the priors we set up for the analysis. The following rules must be followed:
+Observed data must be in the format of a multi-dimensional site frequency spectrum (SFS) as implemented in fastsimcoal2 (fsc2; Excoffier, 2013). More information on this format can be found in the fsc2 documentation. To build your SFS, I recommend you check out Isaac Overcast's easySFS (https://github.com/isaacovercast/easySFS). An important consideration is population order. Since we need to ensure that our observed SFS is built in the same way as our simulated SFS, we must ensure that population order is consistent between our observed SFS and the priors we set up for the analysis. The following rules must be followed:
 
 1.  Populations must be named with numbers 0 to n-1, where n is the number of populations.
 
