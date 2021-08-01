@@ -83,7 +83,7 @@ To check that this worked:
 Installing fastsimcoal2
 -----------------------
 
-In order to simulate data, delimitR uses fastsimcoal2 (Excoffier, 2013). To download fastsimcoal2, visit <http://cmpg.unibe.ch/software/fastsimcoal2/>, and follow the installation instructions. delimitR was built using fastsimcoal2 ver 2.6.0.3 - 14.10.17. If you're using a newer version of fastsimcoal2 and encounter issues, please contact me at <megansmth67@gmail.com>.
+In order to simulate data, delimitR uses fastsimcoal26 (Excoffier, 2013). To download fastsimcoal26, visit <http://cmpg.unibe.ch/software/fastsimcoal26/>, and follow the installation instructions. delimitR was built using fastsimcoal2 ver 2.6.0.3 - 14.10.17.
 
 Installing delimitR
 -------------------
