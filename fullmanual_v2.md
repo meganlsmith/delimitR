@@ -100,6 +100,9 @@ Download the delimitR source code, and unpack the tar.gz file. Set your working 
 
 Now, you're ready to run an analysis in delimitR!
 
+Note: There is an issue in Rcpp v1.0.5 that may cause an error when you try to build the RF classifier (Error in rangerCpp(treetype, x, y.mat, independent.variable.names, mtry,  :
+  function ‘Rcpp_precious_remove’ not provided by package ‘Rcpp’). If you get this error, upgrade to the new version of Rcpp, restart R, and try again. This should fix the issue.
+  
 Input files
 ===========
 
