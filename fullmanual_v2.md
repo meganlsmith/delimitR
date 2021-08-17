@@ -160,7 +160,7 @@ We specify it as follows:
 
     observedtree <- '((0,1),2);'
 
-Remember, when specifying guide trees, populations must be named integers from 0 to n-1.
+Remember, when specifying guide trees, populations must be named integers from 0 to n-1. You can also supply delimitR with a list of guide trees.
 
 Migration
 ---------
