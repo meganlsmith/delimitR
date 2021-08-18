@@ -149,6 +149,8 @@ Here, we use an example with three populations to set up the analysis.
 
 We need to generate model files for fastsimcoal2. To do this, we use the setup\_fsc2() function. View this documentation and the required input using ?setup\_fsc2. We need to specify several variables here, each of which is described in detail below.
 
+NOTE: If the default model set is not appropriate or sufficient for your system, you can design your own models! Just make .tpl and .est files (according to fastsimcoal26 specifications), and put them in your working directory. Name these files 'prefix_1' through 'prefix_M', where 'prefix' is the prefix you're using in delimitR, and M is the total number of models!
+
 The Guide Tree
 --------------
 
