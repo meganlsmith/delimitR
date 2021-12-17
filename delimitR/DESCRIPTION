@@ -1,0 +1,19 @@
+Package: delimitR
+Type: Package
+Title: Comparing Speciation Models using Random Forests
+Author: Megan L. Smith and Bryan C. Carstens
+Maintainer: Megan L. Smith <megansmth67@gmail.com>
+Description: This package performs demographic model selection under the multi-species coalescent
+    while considering various demographic parameters, including gene flow and demographic size changes. 
+    This package compares models using the binned multidimensional SFS and a machine-learning algorithm.
+Version: 2.0.2
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Depends: R (>= 3.5.0)
+Imports: Rcpp(>= 0.11.2), ranger, abcrf, parallel, dplyr, sqldf,
+        stringi, reticulate
+Suggests: knitr, rmarkdown, git2r, testthat
+RoxygenNote: 6.1.1
+NeedsCompilation: no
+Packaged: 2020-07-10 14:02:15 UTC; megansmith
