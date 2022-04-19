@@ -127,11 +127,11 @@ The observed SFS for this tutorial is named pseudoobserved\_tutorial\_MSFS.obs, 
 
     observedSFS <- 'pseudoobserved_tutorial_MSFS'
     
- When filtering your SNP dataset, it is common to filter using some Minor Allele Frequency (MAF) cutoff. The default MAF used in delimitR analyses for simulated data is 0.01. If you wish to update this value, simply open the .tpl files, and change the final line my modifying the last value (in bold below): 
+**Note that your SFS should not include monomorphic sites when running delimitR. Check your observed SFS, and if the first cell (the monomorphic cell) does not say zero, then change it to zero.**
+
+When filtering your SNP dataset, it is common to filter using some Minor Allele Frequency (MAF) cutoff. The default MAF used in delimitR analyses for simulated data is 0.01. If you wish to update this value, simply open the .tpl files, and change the final line my modifying the last value (in bold below): 
  
  SNP 1 0 0 **0.01**
-
-Note that your SFS should not include monomorphic sites when running delimitR. Check your observed SFS, and if the first cell (the monomorphic cell) does not say zero, then change it to zero. 
  
 
 The Traits File
